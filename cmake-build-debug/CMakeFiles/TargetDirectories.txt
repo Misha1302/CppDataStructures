@@ -1,0 +1,3 @@
+/home/micodiy/razakov/cpp/yandex/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir
+/home/micodiy/razakov/cpp/yandex/DataStructures/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/micodiy/razakov/cpp/yandex/DataStructures/cmake-build-debug/CMakeFiles/rebuild_cache.dir
