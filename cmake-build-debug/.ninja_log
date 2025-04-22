@@ -1,22 +1,6 @@
 # ninja log v6
-2	926	1745248716586002705	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-2	895	1745248716586002705	CMakeFiles/DataStructures.dir/SegmentTree.cpp.o	c6fdff639c9500bb
-2	39	1745248716586002705	CMakeFiles/DataStructures.dir/DSU.cpp.o	6b79c93f8b358839
-0	22	1745248744217557105	build.ninja	d948fbc8d3ae967f
-1	49	1745248744223557226	DataStructures	24e45e53fc61ae92
-1	780	1745248752635726089	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-780	819	1745248753414741728	DataStructures	24e45e53fc61ae92
-0	829	1745248758626846374	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-829	866	1745248759455863020	DataStructures	24e45e53fc61ae92
-1	779	1745248785031376714	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-779	817	1745248785809392346	DataStructures	24e45e53fc61ae92
-1	949	1745248810934897310	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-949	992	1745248811882916369	DataStructures	24e45e53fc61ae92
-1	775	1745248833028341573	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-776	813	1745248833803357161	DataStructures	24e45e53fc61ae92
-2	846	1745248897504639244	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-846	886	1745248898348656242	DataStructures	24e45e53fc61ae92
-2	756	1745248910608903179	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
-756	796	1745248911362918368	DataStructures	24e45e53fc61ae92
 1	783	1745248914527982126	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
+2	895	1745248716586002705	CMakeFiles/DataStructures.dir/SegmentTree.cpp.o	c6fdff639c9500bb
+0	22	1745259002758090589	build.ninja	d948fbc8d3ae967f
+2	39	1745248716586002705	CMakeFiles/DataStructures.dir/DSU.cpp.o	6b79c93f8b358839
 783	827	1745248915309997879	DataStructures	24e45e53fc61ae92
