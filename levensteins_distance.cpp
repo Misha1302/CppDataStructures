@@ -74,40 +74,27 @@ struct LevensteinsDistance {
     [[nodiscard]] pair<string, string> get_aligned() const {
         string c, d;
         int i = a.size() - 1, j = b.size() - 1;
-        while (i != 0 or j != 0) {
+        while (i != 0 and j != 0) {
             if (a[i] == b[j]) {
                 c.push_back(a[i]), d.push_back(b[j]);
                 i--, j--;
-            } else {
-                if (i >= 1 and j >= 1) {
-                    int dir = (A[i][j] - 1 == A[i - 1][j]) ? 0 : (A[i][j] - 1 == A[i - 1][j - 1] ? 1 : 2);
-
-                    if (dir == 0) {
-                        c.push_back(a[i]), d.push_back('_');
-                        i--;
-                    }
-                    if (dir == 2) {
-                        c.push_back('_'), d.push_back(b[j]);
-                        j--;
-                    }
-                    if (dir == 1) {
-                        c.push_back(a[i]), d.push_back(b[j]);
-                        // c.push_back('_'), d.push_back('_');
-                        i--, j--;
-                    }
-                } else {
-                    if (j == 0) {
-                        c.push_back(a[i]), d.push_back('_');
-                        i--;
-                    } else if (i == 0) {
-                        c.push_back('_'), d.push_back(b[j]);
-                        j--;
-                    } else {
-                        c.push_back(a[i]), d.push_back(b[j]);
-                        i--, j--;
-                    }
-                }
+                continue;
             }
+
+            if (i - 1 >= 0 and A[i][j] == A[i - 1][j] + 1) {
+                c.push_back(a[i]), d.push_back('_');
+                i--;
+                continue;
+            }
+
+            if (j - 1 >= 0 and A[i][j] == A[i][j - 1] + 1) {
+                c.push_back('_'), d.push_back(b[j]);
+                j--; 
+                continue;
+            }
+
+            c.push_back(a[i]), d.push_back(b[j]);
+            i--, j--;
         }
 
         reverse(c.begin(), c.end());
@@ -116,7 +103,7 @@ struct LevensteinsDistance {
     }
 
     void print_aligned() const {
-        auto [a,b] = get_aligned();
+        auto [a, b] = get_aligned();
         cout << a << "\n" << b << "\n";
         for (int i = 0; i < a.size(); ++i) {
             cout << (a[i] == b[i] ? "*" : "_");
