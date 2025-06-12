@@ -67,6 +67,22 @@ void redirect_in_out_put(const char *input, const char *output) {
 // main code
 using namespace std;
 
+
+bool kuhn(const vector<vector<i64> > &g, vector<i64> &mt, vector<i64> &used, i64 c, int u) {
+    if (used[u] == c) return false;
+
+    used[u] = c;
+
+    for (auto v: g[u]) {
+        if (mt[v] == -1 or kuhn(g, mt, used, c, mt[v])) {
+            mt[v] = u;
+            return true;
+        }
+    }
+
+    return false;
+}
+
 void solve() {
 }
 

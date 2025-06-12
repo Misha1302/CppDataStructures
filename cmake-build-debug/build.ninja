@@ -55,6 +55,12 @@ build CMakeFiles/DataStructures.dir/main.cpp.o: CXX_COMPILER__DataStructures_uns
   OBJECT_DIR = CMakeFiles/DataStructures.dir
   OBJECT_FILE_DIR = CMakeFiles/DataStructures.dir
 
+build CMakeFiles/DataStructures.dir/kuhn.cpp.o: CXX_COMPILER__DataStructures_unscanned_Debug /home/micodiy/razakov/cpp/yandex/DataStructures/kuhn.cpp || cmake_object_order_depends_target_DataStructures
+  DEP_FILE = CMakeFiles/DataStructures.dir/kuhn.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/DataStructures.dir
+  OBJECT_FILE_DIR = CMakeFiles/DataStructures.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target DataStructures
@@ -63,7 +69,7 @@ build CMakeFiles/DataStructures.dir/main.cpp.o: CXX_COMPILER__DataStructures_uns
 #############################################
 # Link the executable DataStructures
 
-build DataStructures: CXX_EXECUTABLE_LINKER__DataStructures_Debug CMakeFiles/DataStructures.dir/main.cpp.o
+build DataStructures: CXX_EXECUTABLE_LINKER__DataStructures_Debug CMakeFiles/DataStructures.dir/main.cpp.o CMakeFiles/DataStructures.dir/kuhn.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/DataStructures.dir
   POST_BUILD = :
