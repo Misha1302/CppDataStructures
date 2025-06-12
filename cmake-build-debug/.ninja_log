@@ -1,6 +1,6 @@
 # ninja log v6
 1	783	1745248914527982126	CMakeFiles/DataStructures.dir/main.cpp.o	6b5d28b8e9a9ac81
 2	895	1745248716586002705	CMakeFiles/DataStructures.dir/SegmentTree.cpp.o	c6fdff639c9500bb
-0	22	1749749057985074491	build.ninja	d948fbc8d3ae967f
+0	22	1749749728138821649	build.ninja	d948fbc8d3ae967f
 2	39	1745248716586002705	CMakeFiles/DataStructures.dir/DSU.cpp.o	6b79c93f8b358839
 783	827	1745248915309997879	DataStructures	24e45e53fc61ae92
